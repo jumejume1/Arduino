@@ -2,12 +2,14 @@
 #define IN2  9
 #define IN3  10
 #define IN4  11
+
 int Steps = 0;
 boolean Direction = true;
 unsigned long last_time;
 unsigned long currentMillis ;
 int steps_left=4095;
 long time;
+
 void setup()
 {
 Serial.begin(115200);
@@ -15,7 +17,7 @@ pinMode(IN1, OUTPUT);
 pinMode(IN2, OUTPUT); 
 pinMode(IN3, OUTPUT); 
 pinMode(IN4, OUTPUT); 
-// delay(1000);
+
 
 }
 void loop()
